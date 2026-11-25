@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+
+:root {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background: #050505;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+/* RESET & BASE */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: #050505;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100dvh;
+    background: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  /* REACT ROOT */
+
+  #root {
+    width: 100%;
+    min-height: 100dvh;
+    background: #050505;
+  }
+
+  /* LINKS */
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* IMAGES */
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* BUTTONS */
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+}
+
+/* SELECTION */
+
+::selection {
+  background: #ffffff;
+  color: #050505;
+}
